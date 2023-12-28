@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id-ID">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Maintenance | $(identity)</title>
+        <link rel="stylesheet" media="all, screen, projection, handheld" href="css/style.css">
+        <meta name="theme-color" content="#04C0FD">
+        <meta name="theme-color" media="(prefers-color-scheme: light)" content="#04C0FD" />
+        <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black" />
+    </head>
+    <body>
+    
+        <script>
+            function openLogin() {
+              if (window.name != "hotspot_logout") return true;
+              open("$(link-login)", "_blank", "");
+              window.close();
+              return false;
+            }
+          </script>
+<div class="video__wrapper">
+	<video id="video__bg" autoplay muted loop playsinline src="./video/bg.mp4">
+	</video>
+	</div>
+          <div class="e__wrapper">
+			
+            <header class="e__header">
+                <div id="dark__trigger" class="trigger">			
+				<label for="toggleDarkMode">
+					<input type="checkbox" id="toggleDarkMode" />
+					<span class="slide"></span>
+				</label>
+			</div>
+            </header>
+            <main class="e__logo--wrapper">
+				<div class="main__logo"></div>
+			</main>
+		</div>
+		<div class="e__bottom">
+                <div id="errorPage" class="e__status">
+                    <div class="e__status--header">
+                            <h2 class="login__title"> Server sedang dalam perbaikan </h2>
+                                <small>Kami akan sesegera mungkin memperbaikinya,<br> perbaikan ini akan berakhir dalam :</small>
+                           <div id="counter"></div>
+      
+                    </div>
+                    
+                    
+                    
+                </div>
+            </main>
+			<nav id="nav__menu">
+				
+				</ul>
+			</nav>
+            <footer class="e__footer">
+                <div class="footer__content"><small>Copyright &copy; <span id="copy__year"></span> $(identity). All Right Reserved.</small></div>
+            </footer>
+            </div> 
+            <script src="./js/config.js"></script> 
+            <script src="./js/sha.js"></script> 
+            <script src="./js/main.js"></script>
+    </body>
+</html>
